@@ -1,0 +1,361 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+
+    /* background: #f5f8fd; */
+
+}
+
+a {
+    color: #149ddd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #37b3ed;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    padding: 12px 16px;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    bottom: 30px;
+}
+
+#snackbar h4 {
+    font-size: 16px;
+    margin: 0;
+    text-decoration: none;
+
+
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+section {
+    padding: 60px 10px;
+    overflow: hidden;
+
+}
+
+body {
+    background: #f5f8fd;
+}
+
+.section-bg {
+    background: #102542;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-family: "Saira Condensed";
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #343a40;
+    text-transform: uppercase;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    /* background: #53D8FB; sky blue crayola */
+    background: #4EB0AE;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+  # Portfolio Details
+  --------------------------------------------------------------*/
+.portfolio-details {
+    padding-top: 40px;
+}
+
+.portfolio-details h2{
+    padding-bottom: 30px;
+    font-weight: 700;
+
+}
+
+.portfolio-details .portfolio-details-slider img {
+    width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #149ddd;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #149ddd;
+}
+
+.portfolio-details .portfolio-info {
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+    justify-content: space-between;
+}
+
+
+.portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px;
+}
+
+
+.portfolio-details .portfolio-info .buttons {
+    justify-content: center;
+}
+
+.portfolio-details .portfolio-info .buttons a {
+    margin: 0 10px 0 0;
+    font-size: 18px;
+    background: #4EB0AE;
+    border: 0;
+    padding: 8px 10px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    width: 40%;
+
+}
+
+.portfolio-details .portfolio-info .buttons a:last-of-type {
+    margin: 0;
+
+
+}
+
+.portfolio-details .portfolio-info .buttons a:hover {
+    /* background: #2D8B86; */
+    background: #236C68;
+}
+
+
+@media (max-width: 992px) {
+    .portfolio-details .portfolio-info .buttons {
+        justify-content: start;
+        width: 200px;
+    }
+}
+
+
+.portfolio-details .portfolio-description {
+    padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+    padding: 0;
+}
+
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .portfolio-details #button row{
+
+    align-items:center;
+} */
+
+.portfolio-details #link_button i {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 5px 0 0;
+  }
+
+  .portfolio-details #link_button {
+    font-size: 18px;
+  
+    background: #4EB0AE;
+    border: 0;
+    padding: 8px 10px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    justify-content: space-around;
+  
+  }
+/*--------------------------------------------------------------
+  # Breadcrumbs
+  --------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 20px 10px;
+    background: #f9f9f9;
+
+}
+
+/* .breadcrumbs h3 {
+    font-size: 36px;
+    font-weight: 600;
+
+} */
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #0e2442;
+    content: "/";
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs h2 {
+        font-size: 28px;
+    }
+
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+
+    .breadcrumbs ol {
+        display: block;
+    }
+
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}

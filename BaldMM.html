@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/projectDetails.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h3>Project Details</h3>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Project Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+        <span>
+
+          <h2>
+            Learning to regulate 3D head shape by removing occluding hair from in-the-wild images
+          </h2>
+        </span>
+
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/BaldMM/4.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/BaldMM/all_inpaint2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/BaldMM/irises.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/BaldMM/meeting_rendered_only.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+
+
+          <div class = "button row">
+            <div class="col-6">
+
+              <div id="Paper-button" class="link_button">
+                <a href="https://arxiv.org/abs/2208.12078" target=”_blank”
+                  class="download btn btn-primary"><i class="bi bi-file-text"></i>Paper</a>
+              </div>
+  
+            </div>
+  
+            <div class="col-6">
+
+              <div id="Github-button" class="link_button">
+                <a href="https://arxiv.org/abs/2208.12078" target=”_blank”
+                  class="download btn btn-primary"><i class="bi bi-github"></i>Github</a>
+              </div>
+  
+          
+  
+            </div>
+            
+          </div>>
+         
+
+         
+
+          
+
+          <!-- <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project 1</h3>
+              <ul>
+                <li><strong>Category</strong>: Research</li>
+                <li><strong>Place</strong>: NTU Singapore</li>
+                <li><strong>Project date</strong>: 1 May 2021 - 1 May 2022</li>
+
+              </ul>
+
+              <div class="container">
+                <div class="row-8"></div>
+
+
+                <div class="buttons row-4">
+
+                  <a href="https://drive.google.com/file/d/1GeTFVEUnfr78UZYAPWjpXYHfDCT-HA26/view?usp=sharing"
+                    target=”_blank” class="Paper btn btn-primary">Paper</a>
+
+                  <a href="https://drive.google.com/file/d/1GeTFVEUnfr78UZYAPWjpXYHfDCT-HA26/view?usp=sharing"
+                    target=”_blank” class="Code btn btn-primary">Code</a>
+                </div>
+
+
+              </div>
+
+
+
+
+
+            </div>
+
+          </div> -->
+
+          <div class="col-12">
+            <div class="portfolio-description">
+
+              <p>
+                Recent 3D face reconstruction methods reconstruct the entire head compared to earlier approaches which only model the face. 
+                Although these methods accurately reconstruct facial features, they do not explicitly regulate the upper part of the head. 
+                Extracting information about this part of the head is challenging due to varying degrees of occlusion by hair. 
+                We present a novel approach for modeling the upper head by removing occluding hair and reconstructing the skin, 
+                revealing information about the head shape. We introduce three objectives: 1) a dice consistency loss that enforces similarity between 
+                the overall head shape of the source and rendered image, 2) a scale consistency loss to ensure that head shape is accurately reproduced even if the upper
+                 part of the head is not visible, and 3) a 71 landmark detector trained using a moving average loss function 
+                 to detect additional landmarks on the head. These objectives are used to train an encoder in an unsupervised manner 
+                 to regress FLAME parameters from in-the-wild input images. Our unsupervised 3DMM model achieves state-of-the-art results 
+                 on popular benchmarks and can be used to infer the head shape, facial features, and textures for direct use in animation 
+                 or avatar creation. 
+              </p>
+            </div>
+
+          </div>
+
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
