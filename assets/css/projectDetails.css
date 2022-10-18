@@ -284,33 +284,22 @@ body {
     }
 }
 
-
-.portfolio-details .button_row{
-    display:flex;
-    /* items are centered along the line */
-    justify-content: center;
-    /* center: items are centered in the cross-axis */
-    align-items: center;
-}
-
-.portfolio-details #link_button i {
-    font-size: 16px;
+.link_button {
+    font-size: 18px;
+    
+    /* background: #4EB0AE; */
+    border: 0;
+    padding: 8px 10px;
     color: #fff;
-    margin: 0 5px 0 0;
-  }
+    transition: 0.4s;
+    border-radius: 4px;
+    justify-content: space-around;
+    display:inline-block;
+    margin: 0px 10px;
+    }
 
-.portfolio-details #link_button {
-font-size: 18px;
+    
 
-background: #4EB0AE;
-border: 0;
-padding: 8px 10px;
-color: #fff;
-transition: 0.4s;
-border-radius: 4px;
-justify-content: space-around;
-
-}
 /*--------------------------------------------------------------
   # Breadcrumbs
   --------------------------------------------------------------*/
